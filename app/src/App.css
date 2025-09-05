@@ -67,15 +67,6 @@ a:nth-of-type(3) .cloud-icon {
   }
   
   .icon-container {
-<<<<<<< HEAD
     gap: 10px;
-=======
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
->>>>>>> b69fbce (Refactor icon container styles in App.css for improved layout and spacing)
   }
 }
