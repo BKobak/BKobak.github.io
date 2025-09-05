@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+}
+
+.App-header {
+  background-color: #27375B;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@keyframes cloudFloat {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(10px, -10px); }
+  100% { transform: translate(0, 0); }
+  
+}
+
+.cloud-icon {
+  animation: cloudFloat 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+
+/* Target the first link’s img */
+a:nth-of-type(1) .cloud-icon {
+  animation-duration: 6s;
+}
+a:nth-of-type(2) .cloud-icon {
+  animation-duration: 7s;
+}
+a:nth-of-type(3) .cloud-icon {
+  animation-duration: 8s;
+}
+
+@media (max-width: 600px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+  
+  .icon-container {
+<<<<<<< HEAD
+    gap: 10px;
+=======
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+>>>>>>> b69fbce (Refactor icon container styles in App.css for improved layout and spacing)
+  }
+}
